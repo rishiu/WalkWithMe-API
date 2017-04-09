@@ -100,4 +100,4 @@ app.get('/walks/nearby', function(req,res){
   res.send(walkdistances.slice(0,5))
 })
 
-app.listen(3000, function(){ console.log('listening')})
+app.listen((process.env.PORT || 3000), function(){ console.log('listening')})
